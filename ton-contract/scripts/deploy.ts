@@ -37,7 +37,7 @@ async function main() {
     console.log('  or faucet.ton.org/testnet')
     console.log(`Send to: ${deployer.address.toString()}`)
     console.log('\nThen run: npm run deploy')
-    process.exit(0)
+    process.exit(1)
   }
 
   const ownerPubKey = BigInt('0x' + Buffer.from(key.publicKey).toString('hex'))

@@ -15,7 +15,7 @@ const config: HardhatUserConfig = {
       accounts: process.env.DEPLOYER_PRIVATE_KEY ? [process.env.DEPLOYER_PRIVATE_KEY] : [],
     },
     'base-sepolia': {
-      url: 'https://sepolia.base.org',
+      url: process.env.BASE_SEPOLIA_RPC || 'https://sepolia.base.org',
       accounts: process.env.DEPLOYER_PRIVATE_KEY ? [process.env.DEPLOYER_PRIVATE_KEY] : [],
     },
   },

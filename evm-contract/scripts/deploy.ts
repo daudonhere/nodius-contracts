@@ -44,12 +44,6 @@ async function main() {
   const contractAddress = receipt.contractAddress
   if (!contractAddress) throw new Error('Deploy failed - no contract address')
 
-  const domain = await publicClient.readContract({
-    address: contractAddress,
-    abi: artifact.abi,
-    functionName: 'DOMAIN_SEPARATOR',
-  })
-
   console.log(`NodiusRelay deployed to ${contractAddress} on ${networkName}`)
   console.log(`Tx hash: ${hash}`)
   try {

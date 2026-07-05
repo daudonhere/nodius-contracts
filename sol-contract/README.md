@@ -2,6 +2,12 @@
 
 Solana Anchor program untuk relay execution + gas sponsorship.
 
+## Environment
+
+| Variable | Description |
+|----------|-------------|
+| `CLUSTER` | Solana cluster — `devnet` or `mainnet` (default: `devnet`) |
+
 ## Instructions
 
 | Instruction | Description |

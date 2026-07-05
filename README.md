@@ -15,6 +15,16 @@ nodius-contracts/
 
 **NodiusRelay** — EIP-712 meta-transaction relay contract deployed on Sepolia and Base Sepolia.
 
+### Environment
+
+Copy `evm-contract/.env.example` to `evm-contract/.env`:
+
+| Variable | Description |
+|----------|-------------|
+| `DEPLOYER_PRIVATE_KEY` | Deployer private key (required) |
+| `ALCHEMY_API_KEY` | Alchemy API key for Sepolia RPC |
+| `NETWORK` | Target network — `sepolia` or `base-sepolia` (default: `sepolia`) |
+
 ### Deployed Addresses
 
 | Chain | Chain ID | Address |
@@ -82,6 +92,16 @@ anchor test                              # Run tests
 ## TON Contract — `ton-contract/`
 
 **TonGaslessWallet** — Tact-based gasless wallet that accepts external messages with signature verification.
+
+### Environment
+
+Copy `ton-contract/.env.example` to `ton-contract/.env`:
+
+| Variable | Description |
+|----------|-------------|
+| `TON_DEPLOYER_MNEMONIC` | Deployer wallet 24-word mnemonic (required) |
+| `TONCENTER_API_KEY` | TonCenter API key |
+| `TON_RELAYER_MNEMONIC` | Fallback mnemonic if `TON_DEPLOYER_MNEMONIC` not set |
 
 ### Deployed
 

@@ -3,7 +3,7 @@ use anchor_lang::solana_program::ed25519_program;
 use anchor_lang::solana_program::instruction::Instruction;
 use anchor_lang::solana_program::program::invoke;
 
-declare_id!("Gn5qgu9TVMZiQXxspugbzVKEJZRx7fEiGCw8c472Rq18");
+declare_id!(option_env!("SOLANA_PROGRAM_ID").unwrap_or("Gn5qgu9TVMZiQXxspugbzVKEJZRx7fEiGCw8c472Rq18"));
 
 #[program]
 pub mod nodius_relay {

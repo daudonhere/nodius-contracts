@@ -19,7 +19,7 @@ async function main() {
     .accounts({})
     .rpc()
 
-  console.log('Deployed. Program ID:', program.programId.toBase58())
+  console.log('User nonce PDA initialized. Program ID:', program.programId.toBase58())
   console.log('Tx:', tx)
 }
 
