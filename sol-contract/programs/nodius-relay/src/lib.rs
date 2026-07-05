@@ -104,7 +104,6 @@ pub struct RelayExecute<'info> {
     )]
     pub user_nonce: Account<'info, UserNonce>,
 
-    /// CHECK: user identity verified via ed25519 signature
     pub user: UncheckedAccount<'info>,
 }
 

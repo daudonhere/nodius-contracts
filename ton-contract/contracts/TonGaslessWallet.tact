@@ -40,7 +40,6 @@ contract TonGaslessWallet with Deployable {
     }
 
     receive() {
-        // Accept incoming TON for funding wallet contract balance
     }
 
     get fun owner(): Int {
